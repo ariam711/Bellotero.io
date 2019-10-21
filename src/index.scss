@@ -1,0 +1,228 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+$color: #071eb3;
+
+#root {
+  background-color: #f9faff;
+  height: 100vh;
+  max-width: 100%;
+
+  & > div:first-child {
+    padding: 0;
+  }
+
+  .main {
+    height: 100%;
+  }
+
+  .vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5rem;
+
+    .title {
+      background: $color;
+      padding: 6px 4px;
+      color: white;
+      font-weight: bold;
+      width: max-content;
+      margin-bottom: 5rem;
+    }
+
+    .col {
+      padding: 0;
+    }
+
+    .card-body {
+      .row{
+      padding: 3rem;
+    }
+      .card-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: Roboto, sans-serif;
+      }
+
+      .card-subtitle {
+        font-size: 1.25rem;
+        font-family: Roboto, sans-serif;
+        color: #a5a5a5;
+      }
+
+      .card-text {
+        font-weight: bold;
+        font-family: Roboto, sans-serif;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #161616;
+      }
+    }
+
+    .card-footer {
+      background: $color;
+      height: 45px;
+      width: 180px;
+      padding: 0;
+      position: absolute;
+      right: -45px;
+      bottom: -20px;
+      color: white;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-text {
+        flex:2;
+        border-right: 1px solid #ffffff6e;
+        margin: 0;
+        font-family: CormorantGaramond, serif;
+        font-stretch: normal;
+        font-style: italic;
+        letter-spacing: 0.69px;
+      }
+      .nav-btn {
+        flex: 1;
+        cursor: pointer;
+
+        &:hover svg {
+          color: white!important;
+        }
+      }
+    }
+
+    .calculator {
+      .row {
+        margin: 0;
+      }
+      .content {
+        margin-right: 10em;
+        line-height: 1.75em;
+      }
+      .to-calc-container {
+        display: flex;
+        justify-content: flex-end;
+
+        .to-calc {
+          border: 1px solid #dbe0ff;
+          width: max-content;
+          min-width: 135px;
+          background: white;
+          border-radius: 4px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 6px;
+
+          &,& > input {
+            color: #161616;
+            font-size: 30px;
+            line-height: 1;
+            font-weight: bold;
+            font-family: Roboto, sans-serif;
+            max-width: 103px;
+          }
+
+          & > span:first-child {
+            color: #c7c7c7;
+            font-size: 23px;
+            margin-right: 0.5rem;
+          }
+
+          & > input {
+            text-align: end;
+            &,&:focus{
+            border: none;
+              outline: none;
+            }
+
+              &::-webkit-outer-spin-button,
+              &::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+                margin: 0;
+              }
+            & {
+              -moz-appearance: textfield;
+            }
+          }
+        }
+      }
+
+      .slider-container {
+        margin-bottom: 5em;
+      }
+      .label {
+        font-weight: bold;
+        position: relative;
+        bottom: -5px;
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > div {
+          display: flex;
+          align-items: baseline;
+          & > span {
+            &:first-child,
+            &:last-child {
+              font-weight: bold;
+              color: $color;
+            }
+
+            &:first-child {
+              font-size: 3em;
+              margin-right: 10px;
+            }
+            &:last-child {
+              font-size: 5.5em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .navbar {
+    background-color: white;
+    padding: 0 10rem;
+    .nav-link {
+      border-top: 4px solid transparent;
+      color: $color;
+      font-weight: bold;
+      font-family: Roboto, sans-serif;
+    }
+
+    .nav-item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 1.5rem .7rem;
+      border-top: 4px solid transparent;
+      font-weight: bold;
+      font-family: Roboto, sans-serif;
+      letter-spacing: 0.3px;
+
+      a {
+        color:$color;
+        &:hover {
+          color: lighten($color, 10%);
+          text-decoration:none;
+        }
+      }
+
+      &.active {
+        border-top: 4px solid $color;
+      }
+    }
+
+    .nav-link.active {
+      border-top: 4px solid $color;
+    }
+  }
+}

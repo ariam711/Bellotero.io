@@ -1,0 +1,17 @@
+{
+  "defaultSeverity": "warning",
+  "extends": ["tslint-config-airbnb", "tslint-config-prettier", "tslint-sonarts"],
+  "rules": {
+    "variable-name": false,
+    "function-name": true,
+    "no-boolean-literal-compare": false,
+    "strict-boolean-expressions": false,
+    "no-increment-decrement": false,
+    "import-name": false,
+    "linebreak-style": [true, "LF"],
+    "curly": true,
+    "no-var-keyword": true,
+    "arrow-return-shorthand": true,
+    "throw-if-namespace": false
+  }
+}
