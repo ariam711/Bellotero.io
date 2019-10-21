@@ -31,8 +31,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "lint": "tslint -c ./tslint.json -p ./tsconfig.json './src/**/*.{ts,tsx}'",
     "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "precheck": "npm run format && npm run lint"
