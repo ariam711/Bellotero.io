@@ -30,7 +30,7 @@ export default () => {
 
   return (
     <Container className="vertical">
-      <h1 className="title">{title}</h1>
+      <h1 className="title">{title} NEW FEATURE</h1>
       <Col
         style={{ position: "relative", width: "100%", height: "max-content" }}
       >
